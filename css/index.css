@@ -1,0 +1,133 @@
+        html, body {
+            height: 100%;
+            margin: 0px;
+            background: #061928;
+/*		background-image: url("../img/bg.jpg")*/
+            /*overflow: hidden;   Disable scrollbars */
+        }
+
+        #wrapper {
+            min-height: 100%; 
+/*            background: #061928;*/
+            margin: 0px;
+         }
+
+         canvas {
+		display: block;
+		margin: 0px;
+		}
+
+
+		@media screen and (orientation:portrait) {
+			.bg-home {
+			    background-image: url("../img/bg.jpg");
+			    background-size: cover;
+				background-repeat: no-repeat;
+    			background-position: top left;
+    			background-attachment: fixed;
+				}
+		}
+		@media screen and (orientation:landscape) {
+			.bg-home {
+				background-image: url("../img/bg.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+    			background-position: center;
+    			background-attachment: fixed;
+			}
+		}
+
+		
+		.bg-white {
+			background: #FFFFFF;
+		}
+
+		.txt-white{
+			color: #FFFFFF;
+		}
+
+		.flex {
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+	        margin: 0;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+
+		.txt-name {
+			font-size:3.5vw;
+		    line-height: 0.9;
+		    z-index: 1;
+		    pointer-events: none;
+		    display: block;
+		    color: #fff;
+		    font-family: 'Raleway';
+		    text-align: center;
+		}
+
+		@media screen and (max-width: 600px) {
+			.txt-name {
+			font-size: 20px;
+		    line-height: 0.9;
+		    z-index: 1;
+		    pointer-events: none;
+		    display: block;
+		    color: #fff;
+		    font-family: 'Raleway';
+		    text-align: center;
+			}
+		}
+
+		.highlight {
+			color: aqua;
+		}
+
+		.txt-top{
+			vertical-align: text-top;
+		}
+
+		.txt-btm{
+			vertical-align: text-bottom;
+		}
+
+		.img-full{
+		max-width:100%;
+		max-height:100%;
+		}
+
+/*NAV BAR*/
+#navbar {
+  overflow: hidden;
+  background-color: #333333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 95px;
+}

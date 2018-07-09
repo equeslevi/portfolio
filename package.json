@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Simple Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equeslevi/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "node.js",
+    "bootstrap",
+    "jquery"
+  ],
+  "author": "Justin Eduardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/equeslevi/portfolio/issues"
+  },
+  "homepage": "https://github.com/equeslevi/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
