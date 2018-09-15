@@ -1,10 +1,3 @@
-/*!
- * Start Bootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
-
-
 //Let it rain!
 $(document).ready(function() {
   var canvas = $('#canvas')[0];
@@ -67,7 +60,7 @@ $(document).ready(function() {
 });
 
 //scroll bar hide shit
-	// document.documentElement.style.overflowX = 'hidden';
+// document.documentElement.style.overflowX = 'hidden';
 
 
 	//resizing shit
