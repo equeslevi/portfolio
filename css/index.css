@@ -8,6 +8,14 @@
              min-height: 100%;
              margin: 0px;
          }
+
+        .hideme{
+            opacity:0;
+        }
+
+        #viewwork{
+            opacity:0;
+        }
          
          canvas {
              display: block;
@@ -199,7 +207,8 @@
          }
          
          #mainNav {
-             background-color: #212529
+             background-color: #212529;
+             opacity:0;
          }
          
          #mainNav .navbar-toggler {
