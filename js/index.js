@@ -4,7 +4,8 @@ $(document).ready(function() {
   var canvas = $('#canvas')[0];
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  
+  setTimeout(stopLoad(), 5000);
+
   if(canvas.getContext) {
     var ctx = canvas.getContext('2d');
     var w = canvas.width;
@@ -24,12 +25,12 @@ $(document).ready(function() {
         xs: -4 + Math.random() * 4 + 2,
         ys: Math.random() * 10 + 10
       })
-    }
+    };
     
     var particles = [];
     for(var b = 0; b < maxParts; b++) {
       particles[b] = init[b];
-    }
+    };
     
     function draw() {
       ctx.clearRect(0, 0, w, h);
@@ -41,7 +42,7 @@ $(document).ready(function() {
         ctx.stroke();
       }
       move();
-    }
+    };
     
     function move() {
       for(var b = 0; b < particles.length; b++) {
@@ -57,8 +58,17 @@ $(document).ready(function() {
     
     setInterval(draw, 40);
     
-  }
+  };
 
+function stopLoad() {
+    $('#loadingbody').addClass('d-none')
+    $('#contentbody').removeClass('d-none')
+    $("#mainNav").animate({'opacity':'1'},5000);
+};
+
+$(window).on("load", function() {
+    setTimeout(stopLoad(), 1000);
+});
 
   /* Every time the window is scrolled ... */
     $(window).scroll( function(){
